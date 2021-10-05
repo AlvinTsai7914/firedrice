@@ -35,6 +35,8 @@ a{color:#000; text-decoration:none; outline: none;}
 =================================================================
 */
 
+/* 20211005新增 */
+.w-100{width:100% !important;}
 /* header */
 header {padding:15px 20px 16px 20px; width: 100%; background:#452421; position: fixed; z-index: 100; }
 header nav:after{content:""; display:block; clear:both;  visibility: hidden;}
@@ -42,7 +44,8 @@ header nav .logo-area {float: none;}
 header nav .logo-area img {max-width: 70%;}
 header nav ul {float: left; list-style: none; margin:30px 0px 0px 10px; padding:0px;}
 header nav ul:after{content:""; display:block; clear:both;  visibility: hidden;}
-header nav ul li {float: left; width: 88px;}
+/* 20211005修改 */
+header nav ul li {float: left; width: 93px; height: 33px;}
 header nav ul li img {width: 100%; height: 34px;}
 header nav ul li.item-01 {background: url(../img/template/item01_off.png) no-repeat 0% 0%;  background-size: 100%;}
 header nav ul li.item-01:hover {background: url(../img/template/item01_on.png) no-repeat 0% 0%;  background-size: 100%;}
@@ -54,15 +57,12 @@ header nav ul li.item-04 {background: url(../img/template/item04_off.png) no-rep
 header nav ul li.item-04:hover {background: url(../img/template/item04_on.png) no-repeat 0% 0%;  background-size: 100%;}
 header nav ul li.item-05 {background: url(../img/template/item14_off.png) no-repeat 0% 0%;  background-size: 100%;}
 header nav ul li.item-05:hover {background: url(../img/template/item14_on.png) no-repeat 0% 0%;  background-size: 100%;}
-header nav a.item-06 {float:left;margin-top: 30px; width:130px; height: 30px; background: url(../img/template/item06_on.png) no-repeat 50% 0%;  background-size: 99%;}
-header nav a.item-11 {float:left;margin-top: 30px; width:115px; height: 30px; background: url(../img/template/item11_on.png) no-repeat 50% 0%;  background-size: 95%;}
-header nav a.item-12 {float:left;margin-top: 30px; width:130px; height: 30px; background: url(../img/template/item13_on.png) no-repeat 50% 0%;  background-size: 95%;}
 
-
-header nav a.item-07 {float:left;margin-top: 20px; width:70px; height: 30px; background: url(../img/template/item07_on.png) no-repeat 0% 0%; background-size: 99%;}
-header nav a.item-08 {float:left;margin-top: 20px; width:102px; height: 30px;  background: url(../img/template/item08_on.png) no-repeat 0% 0%; background-size: 99%;}
-header nav a.item-10 {float:left;margin-top: 20px; width:110px; height: 30px;  background: url(../img/template/item10_on.png) no-repeat 0% 0%; background-size: 99%;}
-
+/* 20211005新增 start */
+header nav ul li.item-15 {float: left; width: 210px; height: 33px;background: url(../img/template/item15.png) no-repeat 0% 0%;  background-size: 100%; position: relative; top: 1px;}
+header nav a.item-16 {float:left;margin-top: 30px; width:130px; height: 30px; background: url(../img/template/item16.png) no-repeat 50% 0%;  background-size: 95%;}
+header nav a.item-17 {float:left;margin-top: 30px; width:183px; height: 30px; background: url(../img/template/item17.png) no-repeat 50% 0%;  background-size: 95%;}
+/* 20211005新增 end*/
 
 .site-active-nav {float: none; width: 100%; margin:0px;}
 .site-active-nav li{float: none; margin-bottom: 10px; display: block; width: 100%; background: transparent!important; color: #000;}
@@ -80,8 +80,8 @@ header nav a.item-10 {float:left;margin-top: 20px; width:110px; height: 30px;  b
 .collapsing ul {margin:0px;}
 .collapsing ul li {margin:0px;}
 .collapsing ul li a{color: #6b5511;}
-
-.nav-btn{float: right; margin-top: 20px;}
+/* 20211005修改 */
+.nav-btn{float: right; margin-top: 34px;}
 
 /* fake nav */
 .fake-nav {height:168px;}
@@ -277,7 +277,7 @@ border: 0px!important;}
 .nav-tabs{border-bottom: 0px!important; text-align: center; max-width:600px; margin:0px auto;}
 .nav-tabs li{display: inline-block; float: none;background: url(../img/template/tabs02.png)no-repeat 100% 0%;background-color:transparent!important;  padding-right: 17px; border:0px!important; outline: none; margin:10px 0px; text-align: center;}
 .nav-tabs li a{color:#e9d48c;text-shadow: 1px 1px 2px rgba(0,0,0,0.8);padding: 10px 0px 10px 15px;margin:0px; background: url(../img/template/tabs01.png)no-repeat 0% 0%;background-color:transparent!important; border:0px; outline: none; border:0px!important;}
-.nav-tabs li.active a,.nav-tabs li.active:hover a{color:#fff!important;text-shadow: 1px 1px 2px rgba(0,0,0,0.8)border:0px; outline: none; background-color:transparent!important; border:0px!important;}
+.nav-tabs li.active a,.nav-tabs li.active:hover a{color:#fff!important;text-shadow: 1px 1px 2px rgba(0,0,0,0.8);border:0px; outline: none; background-color:transparent!important; border: 0px !important;}
 .nav-tabs li.sp-tab {background: url(../img/template/tabs04.png)no-repeat 100% 0%;}
 .nav-tabs li.sp-tab a{background: url(../img/template/tabs03.png)no-repeat 0% 0%; color: #501e18; text-shadow: 1px 1px 2px rgba(255,255,255,0.8);}
 .tab-content{padding:30px 0px 0px 0px;}
@@ -490,34 +490,44 @@ header nav a.item-08 {float:right;width:102px; height: 30px; }
 header nav a.item-10 {float:right;width:110px; height: 30px; }
 header nav a.item-11 {float:right;width:115px; height: 30px; }
 header nav a.item-12 {float:right;width:132px; height: 30px; }
-
+/* 20211005新增 Alvin  */
+header nav a.item-16 {float:right;width:132px; height: 34px; }
+header nav a.item-17 {float:right;width:183px; height: 34px; }
 
 .fake-nav {height:99px;}
 
 .table-box .table-tr .table-th{min-height: 50px; }
 .table-box .table-tr .table-td{min-height: 50px;}
-
-.site-nav {display: block!important;}
+/* 20211005刪除 */
+/* .site-nav {display: block!important;} */
 .site-active-nav-area {display: none!important;}
 }
 
-
-
-@media screen and (min-width:768px) and (max-width:870px) {
-	header nav ul {
+/* 20211005修改 */
+@media screen and (min-width:768px) and (max-width:1300px) {
+	/* header nav ul {
 	    float: left;
 	    list-style: none;
 	    margin: 30px 0px 0px 0px;
 	    padding: 0px;
 	}
 	header nav ul li{width: 84px;}
-	header nav a.item-06 {width: 110px;}
-
+	header nav ul li.item-15 {width: 180px;}
+	header nav a.item-16 {width: 120px;}
+	header nav a.item-17 {width: 164px;} */
 }
 
+/* 20211005修改 */
+@media screen and (max-width:1259px) {
+	/* header nav ul li{width: 77px;}
+	header nav ul li.item-15 {width: 164px;}
+	header nav a.item-16 {width: 100px;}
+	header nav a.item-17 {width: 144px;} */
+	header nav ul	 {
+		margin-top: 10px;
+		float: right;
+	}
 
-@media screen and (min-width:768px) and (max-width:789px) {
-	header nav ul li{width: 77px;}
 }
 
 
@@ -583,24 +593,27 @@ article  .article-toppic-point02 img {max-width: 100%;}
 
 
 /* ========= min 865 ========= */
-@media screen and (min-width:865px){
-header nav ul li {float: left; width: 96px; height: 33px;}
-}
+/* 20211005修改 */
+/* @media screen and (min-width:768px){
+	header nav ul li {float: left; width: 96px; height: 33px;}
+	header nav ul li.item-15 {float: left; width: 210px; height: 33px;}
+} */
 
-@media screen and (min-width:871px) and (max-width:878px) {
+/* 20211005刪除 */
+/* @media screen and (min-width:871px) and (max-width:878px) {
 	header nav ul {
-
 	    margin: 30px 0px 0px 0px;
 	}
-}
+} */
 
 @media screen and (min-width:768px) and (max-width:848px) {
 .footer-area .col-sm-2 .social-btn{margin-top: 30px!important; margin-left: 0px!important;}
 .footer-area .col-sm-4 {margin-top: 200px;}
 }
-
-@media screen and (min-width:768px) and  (max-width:1071px){
-.site-nav {float: right;}
+/* 20211005修改 */
+/* @media screen and (min-width:768px) and  (max-width:1071px){ */
+@media screen and (min-width:768px) and  (max-width:1271px){
+	.site-nav {float: right;}
 }
 
 
